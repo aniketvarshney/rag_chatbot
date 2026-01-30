@@ -1,4 +1,11 @@
 """Streamlit UI for Agentic RAG System - Simplified Version"""
+import os
+import streamlit as st
+
+st.write("DEBUG STARTUP CHECK")
+st.write("GROQ_API_KEY:", os.environ.get("GROQ_API_KEY"))
+st.write("MODEL_NAME:", os.environ.get("MODEL_NAME"))
+
 import builtins
 import uuid
 
